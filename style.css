@@ -1,0 +1,377 @@
+body{
+    font: 14px Helvetica;
+    height:100vh;
+    margin: 0;
+    color: black;
+    width: 100%;
+  }
+  .outer_container{
+      /* position: relative; */
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 60px 535px 60px;
+    height: 100%;
+  }
+  
+  
+    .header{
+        position: fixed;
+        width: 100%;
+      grid-area: header;
+      background-color:black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 20px;
+      align-items: center;
+    }
+    .header>.logo>h3:hover{
+      cursor: context-menu;
+  
+    }
+    .header > .homelinks >ul{
+      display: flex;
+      list-style: none;
+    }
+    
+    .header > .homelinks >ul > li> a{
+      margin-left: 40px;
+      color:white;
+      font-size: 15px;
+      text-decoration: none;
+      list-style: none;
+    }
+    .header > .homelinks >ul > li > a:hover{
+      color: #ffdc6f;
+      
+    }
+  
+    /* body */
+    main{
+      grid-area: main;
+    }
+    .teampicdiv{
+        width: 100%;
+    }
+    .teampics{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .team_infor{
+        background-color: #707070a1 !important;
+        border-radius: 20px;
+        margin-right: 80px;
+        color: black;
+    }
+
+    .hometitles{
+        width: 100%;
+        text-align: center;
+        padding: 20px 0px;
+    }
+    .abt_titles{
+        background-color: black;
+        color: white;
+        padding-left: 5px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .abt_names{
+        color: orange;
+        font-weight: bold;
+    }
+    .abt_container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .code_queen_background >img{
+        height: 100%;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    }
+    .code_queen_background>.card-img-overlay>h5{
+        background-color: rgba(0, 0, 0, 0.548);
+        display: inline;
+        color: orange;
+        font-weight: bold;
+    }
+    .code_queen_background{
+        padding-bottom: 200px;
+    }
+    .card-img-overlay>.card-title> img{
+        border-radius: 50%;
+        border: 5px soliid white;
+        box-shadow: 4px 6px 6px black;
+        width: 100px;
+    }
+    .press_div{
+        background-color: black;
+        color: white;
+    }
+    .press_div>.card-body>h5{
+        color: orange;
+    }
+  
+    /* footer */
+    footer{
+      /* grid-area: footer; */
+     position: absolute;
+      width: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: space-between;
+      color:white;
+      font-size: 15px;
+    }
+    footer >.footer_sections{
+      cursor: context-menu;
+      margin: 0px 10px;
+    }
+    footer >.footer_sections> a{
+      color: white;
+      text-decoration: none;
+    }
+    footer >.footer_sections> a:hover{
+          color: rgb(65, 62, 62);
+      
+    }
+    #footer_links{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+  
+   /* sidebar */
+    .logo{
+      display: flex;
+      align-items: center;
+    }
+    .logo button{
+      font-size: 20px;
+      padding: 10px;
+      background: none;
+      border: none;
+      color:white;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+    .sidebar{
+   
+       /* position: fixed; */
+      transform: translateX(-30rem);
+      width: 15%;
+      background-color: black;
+      height: 100% ;
+      padding: 10px;
+      color:  white; 
+      transition: 1s;
+    }
+    .sidebar>p{
+      cursor: context-menu;
+    }
+    .sidebar.open{
+      transform: translateX(0);
+    }
+    .sidebarclosebutton{
+      border-radius: 50%; border: 2px solid black;
+      width: 30px;
+      height: 28px;
+      color: orange;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .sidebar > div{
+      display: flex;
+      flex-direction: column;
+      font-size: 15px;
+    }
+    .sidebar > div > ul > li > a{
+      text-decoration: none;
+      color:  white;
+      display: block;
+    }
+    .sidebar > div > ul > li {
+      list-style: none;
+      padding: 10px;
+    }
+    .sidebar > div > ul > li:hover{
+      background-color: rgb(65, 62, 62);
+    }
+    .sidebar > div > ul > li > a:hover{
+      color: white;
+    }
+  
+    /* login */
+    .login-div{
+      margin-right: 30%;
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+    }
+    .login-div>p>a{
+      color: rgb(65, 62, 62);
+      }
+    #login{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border: 1px solid black;
+      border-radius: 10px;
+     align-self: center;
+     padding: 20px;
+    }
+    #login>label{
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    #login>input{
+      padding: 5px;
+      margin-bottom: 10px;
+      border: none;
+      border-bottom: 1px solid rgb(65, 62, 62);
+      font-size: 15px;
+    }
+    #login input, textarea {
+      caret-color: orange;
+  }
+    #login>input:focus{
+      outline: none;
+      border-bottom: 2px solid rgb(65, 62, 62);
+      margin-bottom: 9px;
+      /* color: orange; */
+    }
+  
+    /* signup */
+     .signup-div{
+      margin-right: 30%;
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+    }
+    .signup-div>p>a{
+    color: rgb(65, 62, 62);
+    }
+    #signup{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border: 1px solid black;
+      border-radius: 10px;
+     align-self: center;
+     padding: 20px;
+    }
+    #signup>label{
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    #signup>input{
+      padding: 5px;
+      margin-bottom: 10px;
+      border: none;
+      border-bottom: 1px solid rgb(65, 62, 62);
+    }
+    #signup input, textarea {
+      caret-color: orange;
+  }
+    #signup>input:focus{
+      outline: none;
+      border-bottom: 2px solid rgb(65, 62, 62);
+      margin-bottom: 9px;
+    }
+
+    /* admin dashboard */
+    #admin{
+        width: 100%;
+    }
+    .admin_container{
+        width: 100%;}
+    #admin_dashboard{
+        display: flex;
+        width: 100%;
+        
+    }
+    .admin_sidebar{
+        background-color: orange;
+        margin-top: 47px;
+        width: 15%;
+        
+    }
+    .admin_sidebar>a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    .admin_sidebar>a:hover{
+        background-color: black;
+    }
+
+.admin_body_div{
+   width: 80%;
+margin-top: 47px;
+}
+.admin_logo{
+    display: flex;
+    margin-left: 10px;
+    width: 100%;
+}
+.admin_logo>h3{
+    margin-left: 400px;
+}
+.online_forum_form{
+    color: white;
+margin: auto;
+display: flex;
+flex-direction: column;
+width: 50%;
+background-color: black;
+border-radius: 10px;
+}
+.job_input{
+    width: 90%;
+    margin-left: 22px;
+    margin-top: 20px;
+    padding: 7px;
+}
+.online_forum_form>div{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.online_forum_form>button{
+    background-color: orange;
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+    color: white;
+    width: 70px;
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+#userlogout{
+    margin-right: 40px;
+}
+.online_forumm{
+    color: black;
+    background-color: #707070;}
+
+    .online_forumm>div>h4{
+        font-weight: bold;
+    }
+    .online_forumm>div>.link{
+        color: rgb(44, 44, 243);
+    }
