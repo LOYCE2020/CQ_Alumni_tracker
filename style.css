@@ -399,9 +399,9 @@ border-radius: 10px;
       width: 50%;
     }
     .sign_tittle{
-      background-color: #3f3f3f7c;
+      background-color: orange;
       color: wheat;
-      width: 50%;
+      /* width: 50%; */
       text-align: center;
       margin-top: 30px;
       font-size: 15px;
@@ -414,7 +414,7 @@ border-radius: 10px;
     .sign_form{
       background-color: #3f3f3f46;
       width: 100%;
-      margin-left: 20px;
+      /* margin-left: 20px; */
     }
     .sign_form input{
       width: 90%;
