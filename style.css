@@ -19,7 +19,7 @@ body{
   
   
     .header{
-        position: fixed;
+        /* position: fixed; */
         width: 100%;
       grid-area: header;
       background-color:black;
@@ -147,10 +147,10 @@ body{
   
   
    /* sidebar */
-    .logo{
-      display: flex;
-      align-items: center;
-    }
+   .logo img{
+    width: 90px;
+  height: 58px;
+  }
     .logo button{
       font-size: 20px;
       padding: 10px;
@@ -305,7 +305,6 @@ body{
     }
     .admin_sidebar{
         background-color: orange;
-        margin-top: 47px;
         width: 15%;
         
     }
@@ -367,11 +366,15 @@ border-radius: 10px;
 }
 .online_forumm{
     color: black;
-    background-color: #707070;}
+    background-color: #70707023;}
 
     .online_forumm>div>h4{
         font-weight: bold;
     }
     .online_forumm>div>.link{
         color: rgb(44, 44, 243);
+    }
+    .teampics{
+      width: 200px;
+      height: 150px;
     }

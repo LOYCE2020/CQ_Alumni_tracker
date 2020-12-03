@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6416f079ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboards.css">
+    <title>Document</title>
+</head>
+<body id="admin">
+    <div class="admin_container">
+        <header class="header">
+            <div class="logo">
+              <img src="etc-removebg-preview.png" alt="">
+            </div>
+            <div class="homelinks">
+                <ul>
+                    <li><a id="userlogout" href="index.html">Logout</a></li>
+                </ul>
+
+            </div>
+        </header>
+
+    
+            <div class="tab">
+              <button class="tablinks" onclick="openDashboard(event, 'forum')" id="defaultOpen">View online forum</button>
+              <button class="tablinks" onclick="openDashboard(event, 'class')">Attend class</button>
+              <button class="tablinks" onclick="openDashboard(event, 'assignment marks')">Upload assignment scores</button>
+              <button class="tablinks" onclick="openDashboard(event, 'class list')">View class list</button>
+              <button class="tablinks" onclick="openDashboard(event, 'class list')">View class list</button>
+            </div>
+            <!-- online forum -->
+            <div id="forum" class="tabcontent">
+                <div class="dashboardHeader">
+                    <h3><img src="#" alt="Facilitator photo"/></h3>
+                    <h3>Online forum</h3>
+                    <h3><img src="etc-removebg-preview.png" alt="Facilitator photo"/></h3>
+                </div>
+              
+              <div  class="online_forum_form online_forumm">
+                <div>
+                    <h4>Frontend deveoper</h4>
+                    <p><b>Posted on:</b> 1st/Nov/2020</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolor laboriosam totam dolorum magni aut nulla fugit voluptatibus repellendus esse, laborum vero necessitatibus eligendi enim voluptate ex voluptatum nobis perferendis.</p>
+                    <p class="link">https://firebase.google.com/</p>
+                    <p>Deadline:1st/Jan/2021</p>
+                </div>
+                <div>
+                    <h4>Frontend deveoper</h4>
+                    <p >Posted on: 1st/Nov/2020</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolor laboriosam totam dolorum magni aut nulla fugit voluptatibus repellendus esse, laborum vero necessitatibus eligendi enim voluptate ex voluptatum nobis perferendis.</p>
+                    <p class="link">https://firebase.google.com/</p>
+                    <p>Deadline:1st/Jan/2021</p>
+                </div>
+
+            </div>
+            </div>
+            
+            <div id="class" class="tabcontent">
+                <div class="dashboardHeader">
+                    <h3><img src="#" alt="Facilitator photo"/></h3>
+                    <h3></h3>
+                    <h3><img src="etc-removebg-preview.png" alt="Facilitator photo"/></h3>
+                </div>
+              <p></p> 
+            </div>
+            <!-- submitmarks -->
+            <div id="assignment marks" class="tabcontent">
+                <div class="dashboardHeader">
+                    <h3><img src="#" alt="Facilitator photo"/></h3>
+                    <h3>Group assignment scores</h3>
+                    <h3><img src="etc-removebg-preview.png" alt="Facilitator photo"/></h3>
+                </div>
+                <div  class="online_forum_form online_forumm">
+                    <div>
+                        <h4>Frontend deveoper</h4>
+                        <p><b>Posted on:</b> 1st/Nov/2020</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolor laboriosam totam dolorum magni aut nulla fugit voluptatibus repellendus esse, laborum vero necessitatibus eligendi enim voluptate ex voluptatum nobis perferendis.</p>
+                        <p class="link">https://firebase.google.com/</p>
+                        <p>Deadline:1st/Jan/2021</p>
+                    </div>
+                    <div>
+                        <h4>Frontend deveoper</h4>
+                        <p >Posted on: 1st/Nov/2020</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolor laboriosam totam dolorum magni aut nulla fugit voluptatibus repellendus esse, laborum vero necessitatibus eligendi enim voluptate ex voluptatum nobis perferendis.</p>
+                        <p class="link">https://firebase.google.com/</p>
+                        <p>Deadline:1st/Jan/2021</p>
+                    </div>
+    
+                </div>
+            </div>
+                <!-- all user view -->
+            <div id="class list" class="tabcontent">
+                <div class="dashboardHeader">
+                    <h3><img src="#" alt="Facilitator photo"/></h3>
+                    <h3>Online forum</h3>
+                    <h3><img src="etc-removebg-preview.png" alt="Facilitator photo"/></h3>
+                </div>
+                <table>
+                    <tr>
+                      <th>Name</th>
+                      <th>Employment status</th>
+                      <th>Linked In</th>
+                      <th>View</th>
+                      
+                    </tr>
+                    <tr>
+                      <td>Nabasirye Loyce</td>
+                      <td>Freelancer</td>
+                      <td>https://www.linkedin.com/in/nabasirye-loyce-21306a1ab/</td>
+                      <td><i class="far fa-eye"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Winnie Najjuuma</td>
+                        <td>Employed</td>
+                        <td>https://www.linkedin.com/in/najjumma-21306a1ab/</td>
+                        <td><i class="far fa-eye"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Ritah Namugwere</td>
+                        <td>Student</td>
+                        <td>https://www.linkedin.com/in/ritah-21306a1ab/</td>
+                        <td><i class="far fa-eye"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Percis Mukyala</td>
+                        <td>Internship</td>
+                        <td>https://www.linkedin.com/in/percis-21306a1ab/</td>
+                        <td><i class="far fa-eye"></i></td>
+                  </tr>
+                  </table>
+
+                  <!--single user view  -->
+
+<div class="card">
+  <img src="team_awesome.jpg" alt="titan" style="width:100%">
+  <h1>Person</h1>
+  <p class="title">Employed</p>
+  <p class="title">Contact</p>
+  <div style="margin: 24px 0;">  
+    <a href="#"><i class="fa fa-linkedin socialLinks"></i></a>  
+    <a href="#"><i class="fas fa-envelope socialLinks"></i></a> 
+  </div>
+</div>
+              </div>
+             
+        <!-- </main> -->
+    </div>
+</body>
+<script src="dashboards.js"></script>
+</html>
