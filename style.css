@@ -1,27 +1,20 @@
+* {box-sizing: border-box}
+body {font-family: "Helvetica", sans-serif;}
 body{
-    font: 12px Helvetica;
-    height:100vh;
+    font: 14px Helvetica;
     margin: 0;
     color: black;
     width: 100%;
   }
+ 
   .outer_container{
-      /* position: relative; */
-    display: grid;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-    /* grid-template-columns: 1fr; */
-    grid-template-rows: 60px 535px 60px;
-    height: 100%;
+    height:90vh;
+    width: 100%;
   }
-  
   
     .header{
         /* position: fixed; */
         width: 100%;
-      grid-area: header;
       background-color:black;
       color: white;
       display: flex;
@@ -51,21 +44,19 @@ body{
     }
   
     /* body */
-    main{
-      grid-area: main;
-    }
+  
     .teampicdiv{
         width: 100%;
     }
     .teampics{
-        width: 100% !important;
-        height: 100% !important;
+        width: 100%;
+        height: 82vh !important;
     }
     .team_infor{
         background-color: #707070a1 !important;
         border-radius: 20px;
         margin-right: 80px;
-        color: black;
+        color: orange;
     }
 
     .hometitles{
@@ -84,12 +75,11 @@ body{
         color: orange;
         font-weight: bold;
     }
-    .abt_container{
-        display: flex;
-        justify-content: space-between;
-    }
+   .abt-body{
+     display: flex;
+   }
     .code_queen_background >img{
-        height: 100%;
+        /* height: 80vh; */
         filter: blur(2px);
         -webkit-filter: blur(2px);
     }
@@ -99,9 +89,7 @@ body{
         color: orange;
         font-weight: bold;
     }
-    .code_queen_background{
-        padding-bottom: 200px;
-    }
+  
     .card-img-overlay>.card-title> img{
         border-radius: 50%;
         border: 5px soliid white;
@@ -109,7 +97,7 @@ body{
         width: 100px;
     }
     .press_div{
-        background-color: black;
+        background-color: grey;
         color: white;
     }
     .press_div>.card-body>h5{
@@ -117,98 +105,24 @@ body{
     }
   
     /* footer */
-    footer{
-      /* grid-area: footer; */
-     position: absolute;
-      width: 100%;
-      background-color: black;
-      display: flex;
-      justify-content: space-between;
-      color:white;
-      font-size: 15px;
-    }
-    footer >.footer_sections{
-      cursor: context-menu;
-      margin: 0px 10px;
-    }
-    footer >.footer_sections> a{
-      color: white;
-      text-decoration: none;
-    }
-    footer >.footer_sections> a:hover{
-          color: rgb(65, 62, 62);
-      
-    }
-    #footer_links{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+   .footer-section{
+     display: flex;
+     justify-content: space-between;
+     color: white;
+     background-color: black;
+     padding: 5px;
+   }
+   .footer-section a{
+     color: white;
+   }
   
   
-   /* sidebar */
-   .logo img{
+   /* logo */
+    .logo img{
     width: 90px;
   height: 58px;
   }
-    .logo button{
-      font-size: 20px;
-      padding: 10px;
-      background: none;
-      border: none;
-      color:white;
-      cursor: pointer;
-      margin-right: 5px;
-    }
-    .sidebar{
    
-       /* position: fixed; */
-      transform: translateX(-30rem);
-      width: 15%;
-      background-color: black;
-      height: 100% ;
-      padding: 10px;
-      color:  white; 
-      transition: 1s;
-    }
-    .sidebar>p{
-      cursor: context-menu;
-    }
-    .sidebar.open{
-      transform: translateX(0);
-    }
-    .sidebarclosebutton{
-      border-radius: 50%; border: 2px solid black;
-      width: 30px;
-      height: 28px;
-      color: orange;
-      font-weight: bold;
-      font-size: 15px;
-      cursor: pointer;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
-    .sidebar > div{
-      display: flex;
-      flex-direction: column;
-      font-size: 15px;
-    }
-    .sidebar > div > ul > li > a{
-      text-decoration: none;
-      color:  white;
-      display: block;
-    }
-    .sidebar > div > ul > li {
-      list-style: none;
-      padding: 10px;
-    }
-    .sidebar > div > ul > li:hover{
-      background-color: rgb(65, 62, 62);
-    }
-    .sidebar > div > ul > li > a:hover{
-      color: white;
-    }
   
     /* login */
     .login-div{
@@ -384,12 +298,16 @@ border-radius: 10px;
     /* sign up */
     .sign_container{
       width: 100%;
-      height: 100vh;
+      height: 90vh;
       background-image: url(prossy.jpeg);
       display: flex;
       flex-direction: column;
       align-items: center;
+      /* filter: blur(2px);
+      -webkit-filter: blur(2px); */
+    
     }
+
     .container{
       display: flex;
       flex-direction: column;
@@ -397,14 +315,14 @@ border-radius: 10px;
     }
     .sign_div{
       width: 50%;
+      height: 90vh;
     }
     .sign_tittle{
       background-color: orange;
       color: wheat;
-      /* width: 50%; */
       text-align: center;
-      margin-top: 30px;
-      font-size: 15px;
+      margin-top: 10px;
+      font-size: inherit;
       border-radius: 10px 10px 0px 0px;
       color: white;
       font-weight: bold;
@@ -414,10 +332,12 @@ border-radius: 10px;
     .sign_form{
       background-color: #3f3f3f46;
       width: 100%;
-      /* margin-left: 20px; */
     }
     .sign_form input{
       width: 90%;
+      height: 3px;
+      font-size: inherit;
+      border-radius: 5px;
     }
     .signin_btn{
       font-size: inherit;

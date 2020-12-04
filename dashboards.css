@@ -36,11 +36,11 @@ body {font-family: "Helvetica", sans-serif;}
   border-left: none;
   height: 600px;
 }
-.dashboardHeader img{
+/* .dashboardHeader img{
     width: 120px;
     height: 80px;
     
-}
+} */
 .dashboardHeader{
     display: flex;
     justify-content: space-between;
