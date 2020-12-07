@@ -10,10 +10,11 @@
     <title>Code Queen</title>
 </head>
 <body id="admin">
-    <div class="admin_container">
+    <div class="admi_container">
         <header class="header">
             <div class="logo">
                 <a href="index.html"><img src="etc-removebg-preview.png" alt=""></a>
+
             </div>
             <div class="homelinks">
                 <ul>
@@ -23,125 +24,135 @@
             </div>
         </header>
 
-    
-            <div class="tab">
-              <button class="tablinks" onclick="openDashboard(event, 'forum')" id="defaultOpen">View online forum</button>
-              <button class="tablinks" onclick="openDashboard(event, 'class')"> Attend class</button>
-              <button class="tablinks" onclick="openDashboard(event, 'assignment marks')">Upload assignment scores</button>
-              <button class="tablinks" onclick="openDashboard(event, 'class list')">View class list</button>
-              <!-- <button class="tablinks" onclick="openDashboard(event, 'class list')">View class list</button> -->
-            </div>
-            <!-- online forum -->
-            <div id="forum" class="tabcontent">
-                <div class="dashboardHeader">
-                    <h3><img src="#" alt="Facilitator photo"/></h3>
-                   
-                </div>
-              
-              <div  class="online_forum_form online_forumm">
-                <div>
-                    <h4>Frontend deveoper</h4>
-                    <p><b>Posted on:</b> 1st/Nov/2020</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolor laboriosam totam dolorum magni aut nulla fugit voluptatibus repellendus esse, laborum vero necessitatibus eligendi enim voluptate ex voluptatum nobis perferendis.</p>
-                    <p class="link">https://firebase.google.com/</p>
-                    <p>Deadline:1st/Jan/2021</p>
-                </div>
-                <div>
-                    <h4>Frontend deveoper</h4>
-                    <p >Posted on: 1st/Nov/2020</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolor laboriosam totam dolorum magni aut nulla fugit voluptatibus repellendus esse, laborum vero necessitatibus eligendi enim voluptate ex voluptatum nobis perferendis.</p>
-                    <p class="link">https://firebase.google.com/</p>
-                    <p>Deadline:1st/Jan/2021</p>
-                </div>
 
+        <div class="tab">
+            <button class="tablinks" onclick="openDashboard(event, 'class_link')">Join class link</button>
+            <button class="tablinks" onclick="openDashboard(event, 'online_forum')" id="defaultOpen">View online forum</button>
+            <button class="tablinks" onclick="openDashboard(event, 'class_list')">Upload student scores</button>
+            <button class="tablinks" onclick="openDashboard(event, 'alumni_list')">View alumni list</button>
+        </div>
+        <!--zoom class link-->
+        <div id="class_link" class="tabcontent">
+            <div class="dashboardHeader">
+                <h3><img src="#" alt="Facilitator's photo" /></h3>
             </div>
-            </div>
-            
-            <div id="class" class="tabcontent">
-                <div class="dashboardHeader">
-                    <h3><img src="#" alt="Facilitator photo"/></h3>
-                    <h3></h3>
-                </div>
-              <p></p> 
-            </div>
-            <!-- submitmarks -->
-            <div id="assignment marks" class="tabcontent">
-                <div class="dashboardHeader">
-                    <h3><img src="#" alt="Facilitator photo"/></h3>
-                </div>
-                <div  class="online_forum_form online_forumm">
-                    <div>
-                        <h4>Frontend deveoper</h4>
-                        <p><b>Posted on:</b> 1st/Nov/2020</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolor laboriosam totam dolorum magni aut nulla fugit voluptatibus repellendus esse, laborum vero necessitatibus eligendi enim voluptate ex voluptatum nobis perferendis.</p>
-                        <p class="link">https://firebase.google.com/</p>
-                        <p>Deadline:1st/Jan/2021</p>
-                    </div>
-                    <div>
-                        <h4>Frontend deveoper</h4>
-                        <p >Posted on: 1st/Nov/2020</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolor laboriosam totam dolorum magni aut nulla fugit voluptatibus repellendus esse, laborum vero necessitatibus eligendi enim voluptate ex voluptatum nobis perferendis.</p>
-                        <p class="link">https://firebase.google.com/</p>
-                        <p>Deadline:1st/Jan/2021</p>
-                    </div>
-    
-                </div>
-            </div>
-                <!-- all user view -->
-            <div id="class list" class="tabcontent">
-                <div class="dashboardHeader">
-                    <h3><img src="#" alt="Facilitator photo"/></h3>
-                   
-                </div>
-                <table>
-                    <tr>
-                      <th>Name</th>
-                      <th>Employment status</th>
-                      <th>Linked In</th>
-                      <th>View</th>
-                      
-                    </tr>
-                    <tr>
-                      <td>Nabasirye Loyce</td>
-                      <td>Freelancer</td>
-                      <td>https://www.linkedin.com/in/nabasirye-loyce-21306a1ab/</td>
-                      <td><i class="far fa-eye"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Winnie Najjuuma</td>
-                        <td>Employed</td>
-                        <td>https://www.linkedin.com/in/najjumma-21306a1ab/</td>
-                        <td><i class="far fa-eye"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Ritah Namugwere</td>
-                        <td>Student</td>
-                        <td>https://www.linkedin.com/in/ritah-21306a1ab/</td>
-                        <td><i class="far fa-eye"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Percis Mukyala</td>
-                        <td>Internship</td>
-                        <td>https://www.linkedin.com/in/percis-21306a1ab/</td>
-                        <td><i class="far fa-eye"></i></td>
-                  </tr>
-                  </table>
-
-                  <!--single user view  -->
-
-<!-- <div class="card">
-  <img src="team_awesome.jpg" alt="titan" style="width:100%">
-  <h1>Person</h1>
-  <p class="title">Employed</p>
-  <p class="title">Contact</p>
-  <div style="margin: 24px 0;">  
-    <a href="#"><i class="fa fa-linkedin socialLinks"></i></a>  
-    <a href="#"><i class="fas fa-envelope socialLinks"></i></a> 
-  </div>
-</div> -->
-              </div>
+            <!-- <div class="admin_user_form">
              
-        <!-- </main> -->
+            </div>  -->
+
+        </div>
+
+
+        <!-- Online forum -->
+        <div id="online_forum" class="tabcontent">
+            <div class="dashboardHeader">
+                <h3><img src="#" alt="Facilitator's photo" /></h3>
+            </div>
+            <div class="online_forum_div">
+
+                <h3>Online forum</h3>
+                <div class="linksDiv" id="onlineForum">
+                    <div class="forum_description_div">
+                        <h4>Job: Frontend developer</h4>
+                        <p><b>Posted on:</b> 1st/Nov/2020</p>
+                        <p>As a Front End Developer, you'll create killer front-end work and custom, highly-converting
+                            eCommerce
+                            storefronts. You'll become an expert in conversion rate optimization - helping brands you
+                            know and
+                            love
+                            leverage data to accelerate revenue.</p>
+                        <a href="https://boards.greenhouse.io/bva/jobs/4853357002?lever-source=Indeed">See more</a>
+                        <p>Deadline:1st/Jan/2021</p>
+                    </div>
+                    <hr>
+                    <div class="forum_description_div">
+                        <h4>Job: Fullstack developer</h4>
+                        <p><b>Posted on:</b> 11th/Nov/2020</p>
+                        <p>Full stacke developer needed. You will work remotely</p>
+                        <a href="https://boards.greenhouse.io/bva/jobs/4853357002?lever-source=Indeed">See more</a>
+                        <p>Deadline:1st/Jan/2021</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+
+        <!--class list-->
+        <div id="class_list" class="tabcontent">
+            <div class="dashboardHeader">
+                <h3><img src="#" alt="Facilitator's photo" /></h3>
+            </div>
+            <div class="admin_user_form">
+                <h3>Student score</h3>
+                <form class="admin_form">
+                    <div class="form-group row ">
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control zoom_input"
+                                placeholder="Student name">
+                        </div>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control zoom_input"
+                                placeholder="Course unit">
+                        </div>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control zoom_input"
+                                placeholder="Score">
+                        </div>
+                    </div>
+
+                    <div class="form-group row facilitator_submit_btn_div">
+                        <div class="col-sm-10 admin_btn_div">
+                            <button type="submit" class="btn btn-primary zoom_btn">Submit</button>
+                            <button type="submit" id="cancel_btn" class="btn btn-primary zoom_btn">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- View alumni list -->
+        <div id="alumni_list" class="tabcontent">
+            <div class="dashboardHeader">
+                <h3><img src="#" alt="Facilitator's photo" /></h3>
+            </div>
+            <div class="student_table_tittle_div">
+                <p>Alumni</p>
+            </div>
+            <table>
+                <tr>
+                    <th> Name</th>
+                    <th>Employment status</th>
+                    <th>Linked In</th>
+                    <th>View</th>
+                </tr>
+                <tr></tr>
+                <td>Nabasirye Loyce</td>
+                <td>Freelancer</td>
+                <td>https://www.linkedin.com/in/nabasirye-loyce-21306a1ab/</td>
+                <td><i class="far fa-eye"></i></td>
+                </tr>
+                <tr>
+                    <td>Winnie Najjuuma</td>
+                    <td>Employed</td>
+                    <td>https://www.linkedin.com/in/najjumma-21306a1ab/</td>
+                    <td><i class="far fa-eye"></i></td>
+                </tr>
+                <tr>
+                    <td>Ritah Namugwere</td>
+                    <td>Student</td>
+                    <td>https://www.linkedin.com/in/ritah-21306a1ab/</td>
+                    <td><i class="far fa-eye"></i></td>
+                </tr>
+                <tr>
+                    <td>Percis Mukyala</td>
+                    <td>Internship</td>
+                    <td>https://www.linkedin.com/in/percis-21306a1ab/</td>
+                    <td><i class="far fa-eye"></i></td>
+                </tr>
+
+            </table>
+        </div>
     </div>
 </body>
 <script src="dashboards.js"></script>

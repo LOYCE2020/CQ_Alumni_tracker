@@ -67,7 +67,7 @@ table {
   }
 
   /* view specific student */
-  .card {
+  /* .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
@@ -84,19 +84,7 @@ table {
     color: grey;
     font-size: 15px;
   }
-  
-  /* button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 15px;
-  } */
+
   .student_table_tittle_div{
     padding: 3px;
     color: white;
@@ -112,9 +100,10 @@ table {
      color: white;
      padding-bottom: 15px;
 
- }
+ } */
 
  /* Admin dashboard */
+
  /* zoom link */
  .zoom_input{
 width: 96%;
@@ -156,15 +145,12 @@ border-radius: 5px;
 
 
 
-
-/* Add padding to containers */
 .container {
   padding: 16px;
   background-color: black;
   color: white;
 }
 
-/* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
@@ -179,7 +165,6 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
-/* Overwrite default styles of hr */
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
@@ -201,12 +186,6 @@ hr {
   opacity: 1;
 }
 
-/* making the register button blue */
-a {
-  color: dodgerblue;
-}
-
-/* Set a grey background color and center the text of the "sign in" section */
 .signin {
   background-color: #f1f1f1;
   text-align: center;
@@ -245,3 +224,22 @@ justify-content: space-around;
 border: 2px solid white;
 text-align: center;
 }
+
+/* facilitator dashboard */
+.facilitator_submit_btn_div button{
+  border: none;
+  outline: 0;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+.online_forum_div{
+  background-color:#3f3f3f93;
+  width: 100%;
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 3px;
+  border-radius: 20px;
+}
+
+
