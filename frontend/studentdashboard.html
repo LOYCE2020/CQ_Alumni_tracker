@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6416f079ba.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/jpg" href="etc-removebg-preview.png"/>
+    <link rel="icon" type="image/jpg" href="etc-removebg-preview.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dashboards.css">
     <title>Code Queen</title>
 </head>
 
-<body id="admin">
+<body id="student">
     <div class="admin_container">
         <header class="header">
             <div class="logo">
                 <a href="index.html"><img src="etc-removebg-preview.png" alt=""></a>
-                
+
             </div>
             <div class="homelinks">
                 <ul>
@@ -30,36 +30,19 @@
         <div class="tab">
             <button class="tablinks" onclick="openDashboard(event, 'class_link')">Join class link</button>
             <button class="tablinks" onclick="openDashboard(event, 'class_content')">Download class content</button>
-            <button class="tablinks" onclick="openDashboard(event, 'online_forum')"  id="defaultOpen">View online forum</button>
+            <button class="tablinks" onclick="openDashboard(event, 'online_forum')" id="defaultOpen">View online
+                forum</button>
+            <button class="tablinks" onclick="openDashboard(event, 'class_list')">View Student list</button>
             <button class="tablinks" onclick="openDashboard(event, 'alumni_list')">View alumni list</button>
-            <button class="tablinks" onclick="openDashboard(event, 'student_list')">View student list</button>
-            <!-- <button class="tablinks" onclick="openDashboard(event, 'facilitator')">Facilitators</button>
-            <button class="tablinks" onclick="openDashboard(event, 'class list')">Partners</button>
-            <button class="tablinks" onclick="openDashboard(event, 'class list')">Upload test</button> -->
         </div>
         <!--zoom class link-->
         <div id="class_link" class="tabcontent">
             <div class="dashboardHeader">
-                <h3><img src="#" alt="Student" /></h3>
+                <h3><img src="#" alt="User's photo" /></h3>
             </div>
             <!-- <div class="admin_user_form">
-                <h3>Paste class link</h3>
-                <form class="admin_form">
-                    <div class="form-group row ">
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control zoom_input" id="inputEmail3"
-                                placeholder="Paste link">
-                        </div>
-                    </div> -->
-
-                    <div class="form-group row">
-                        <div class="col-sm-10 admin_btn_div">
-                            <button type="submit" class="btn btn-primary zoom_btn">Upload</button>
-                            <button type="submit" id="cancel_btn" class="btn btn-primary zoom_btn">Cancel</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+             
+            </div>  -->
 
         </div>
 
@@ -68,72 +51,159 @@
 
         <div id="class_content" class="tabcontent">
             <div class="dashboardHeader">
-                <h3><img src="#" alt="Facilitator photo" /></h3>
+                <h3><img src="#" alt="User's photo" /></h3>
             </div>
             <div class="admin_user_form">
-                <h3>Upload student material</h3>
-                <form class="admin_form">
-                    <div class="form-group row ">
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control zoom_input" id="inputEmail3"
-                                placeholder="Link tittle">
-                        </div>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control zoom_input" id="inputEmail3"
-                                placeholder="Paste link">
-                        </div>
-                    </div>
+                <h3>Class recordings</h3>
+                <div class="linksDiv">
+                    <div class="slides">
+                        <p><b>25th/Nov/2020</b></p>
+                        <p>Array push</p>
+                        <p><a href="arrayPush.mp4" download>Download</a></p>
 
-                    <div class="form-group row">
-                        <div class="col-sm-10 admin_btn_div">
-                            <button type="submit" class="btn btn-primary zoom_btn">Upload</button>
-                            <button type="submit" id="cancel_btn" class="btn btn-primary zoom_btn">Cancel</button>
-                        </div>
                     </div>
-                </form>
+                    <hr class="link_separator">
+                    <div class="slides">
+                        <p><b>23rd/Nov/2020</b></p>
+                        <p>Array and array index</p>
+                        <p><a href="arrayAndArrayIndex.mp4" download>Download</a></p>
+
+                    </div>
+                    <hr class="link_separator">
+                    <div class="slides">
+                        <p><b>27th/Nov/2020</b></p>
+                        <p>compound conditionals</p>
+                        <p><a href="compoundConditionals.mp4" download>Download</a></p>
+
+                    </div>
+                    <hr class="link_separator">
+                </div>
             </div>
         </div>
+
+
         <!-- update online forum -->
         <div id="online_forum" class="tabcontent">
             <div class="dashboardHeader">
-                <h3><img src="#" alt="Student photo" /></h3>
+                <h3><img src="#" alt="User's photo" /></h3>
             </div>
-            <div  class="online_forum_form online_forumm">
-                <div>
-                    <h4>Frontend deveoper</h4>
-                    <p><b>Posted on:</b> 1st/Nov/2020</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolor laboriosam totam dolorum magni aut nulla fugit voluptatibus repellendus esse, laborum vero necessitatibus eligendi enim voluptate ex voluptatum nobis perferendis.</p>
-                    <p class="link">https://firebase.google.com/</p>
-                    <p>Deadline:1st/Jan/2021</p>
-                </div>
-                <div>
-                    <h4>Frontend deveoper</h4>
-                    <p >Posted on: 1st/Nov/2020</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolor laboriosam totam dolorum magni aut nulla fugit voluptatibus repellendus esse, laborum vero necessitatibus eligendi enim voluptate ex voluptatum nobis perferendis.</p>
-                    <p class="link">https://firebase.google.com/</p>
-                    <p>Deadline:1st/Jan/2021</p>
-                </div>
+            <div class="admin_user_form">
 
+                <h3>Online forum</h3>
+                <div class="linksDiv" id="onlineForum">
+                    <div class="forum_description_div">
+                        <h4>Job: Frontend developer</h4>
+                        <p><b>Posted on:</b> 1st/Nov/2020</p>
+                        <p>As a Front End Developer, you'll create killer front-end work and custom, highly-converting
+                            eCommerce
+                            storefronts. You'll become an expert in conversion rate optimization - helping brands you
+                            know and
+                            love
+                            leverage data to accelerate revenue.</p>
+                        <a href="https://boards.greenhouse.io/bva/jobs/4853357002?lever-source=Indeed">See more</a>
+                        <p>Deadline:1st/Jan/2021</p>
+                    </div>
+                    <hr>
+                    <div class="forum_description_div">
+                        <h4>Job: Fullstack developer</h4>
+                        <p><b>Posted on:</b> 11th/Nov/2020</p>
+                        <p>Full stacke developer needed. You will work remotely</p>
+                        <a href="https://boards.greenhouse.io/bva/jobs/4853357002?lever-source=Indeed">See more</a>
+                        <p>Deadline:1st/Jan/2021</p>
+                    </div>
+                    <hr>
+                </div>
             </div>
         </div>
+
+
+        <!--class list-->
+        <div id="class_list" class="tabcontent">
+            <div class="dashboardHeader">
+                <h3><img src="#" alt="User's photo" /></h3>
+            </div>
+            <div class="student_table_tittle_div">
+                <p>Cohort 3</p>
+            </div>
+
+            <table class="student_assessment_table">
+                <tr>
+                    <th> Name</th>
+                    <th colspan="6">Student scores</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>Html</th>
+                    <th>CSS</th>
+                    <th>Javascript</th>
+                    <th colspan="3">Final assignment score</th>
+                </tr>
+                <tr>
+                    <th colspan="4"></th>
+                    <th>Html</th>
+                    <th>Css</th>
+                    <th>Javascript</th>
+                </tr>
+                <tr>
+                    <td>Nabasirye Loyce</td>
+                    <td>50</td>
+                    <td>60</td>
+                    <td>50</td>
+                    <td>67</td>
+                    <td>89</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>Winnie Najjuuma</td>
+                    <td>50</td>
+                    <td>60</td>
+                    <td>50</td>
+                    <td>67</td>
+                    <td>97</td>
+                    <td>64</td>
+                </tr>
+                <tr>
+                    <td>Ritah Namugwere</td>
+                    <td>50</td>
+                    <td>60</td>
+                    <td>50</td>
+                    <td>60</td>
+                    <td>47</td>
+                    <td>57</td>
+                </tr>
+                <tr>
+                    <td>Percis Mukyala</td>
+                    <td>50</td>
+                    <td>60</td>
+                    <td>50</td>
+                    <td>62</td>
+                    <td>66</td>
+                    <td>58</td>
+                </tr>
+
+            </table>
+        </div>
+
         <!-- View alumni list -->
         <div id="alumni_list" class="tabcontent">
             <div class="dashboardHeader">
-                <h3><img src="#" alt="Student photo" /></h3>
+                <h3><img src="#" alt="User's photo" /></h3>
+            </div>
+            <div class="student_table_tittle_div">
+                <p>Alumni</p>
             </div>
             <table>
                 <tr>
-                    <th>    Name</th>
+                    <th> Name</th>
                     <th>Employment status</th>
                     <th>Linked In</th>
                     <th>View</th>
-
                 </tr>
                 <tr></tr>
-                    <td>Nabasirye Loyce</td>
-                    <td>Freelancer</td>
-                    <td>https://www.linkedin.com/in/nabasirye-loyce-21306a1ab/</td>
-                    <td><i class="far fa-eye"></i></td>
+                <td>Nabasirye Loyce</td>
+                <td>Freelancer</td>
+                <td>https://www.linkedin.com/in/nabasirye-loyce-21306a1ab/</td>
+                <td><i class="far fa-eye"></i></td>
                 </tr>
                 <tr>
                     <td>Winnie Najjuuma</td>
@@ -153,114 +223,9 @@
                     <td>https://www.linkedin.com/in/percis-21306a1ab/</td>
                     <td><i class="far fa-eye"></i></td>
                 </tr>
-                <button>Update</button>
+
             </table>
-
-            <!--update student ist  -->
-            <div id="student_list" class="tabcontent">
-                <div class="dashboardHeader">
-                    <h3><img src="#" alt="Facilitator photo" /></h3>
-                </div>
-                
-            <div class="admin_user_form">
-                <h3>Paste classhhhhhhhhhhhhhhhh link</h3>
-                <form class="admin_form">
-                    <div class="form-group row ">
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control zoom_input" id="inputEmail3"
-                                placeholder="Paste link">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-10 admin_btn_div">
-                            <button type="submit" class="btn btn-primary zoom_btn">Upload</button>
-                            <button type="submit" id="cancel_btn" class="btn btn-primary zoom_btn">Cancel</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            </div>
-            <!--update student ist  -->
-            <div id="facilitator" class="tabcontent">
-                <div class="dashboardHeader">
-                    <h3><img src="#" alt="Facilitator photo" /></h3>
-                </div>
-                
-            <div class="admin_user_form">
-                <h3>Cohort facilitor</h3>
-                <form class="admin_form">
-                    <div class="form-group row ">
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control zoom_input" id="inputEmail3"
-                                placeholder="Paste link">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-10 admin_btn_div">
-                            <button type="submit" class="btn btn-primary zoom_btn">Upload</button>
-                            <button type="submit" id="cancel_btn" class="btn btn-primary zoom_btn">Cancel</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            </div>
-            <!--update student ist  -->
-            <div id="class list" class="tabcontent">
-                <div class="dashboardHeader">
-                    <h3><img src="#" alt="Facilitator photo" /></h3>
-                    <h3>Online forum</h3>
-                </div>
-                
-            <div class="admin_user_form">
-                <h3>Paste class link</h3>
-                <form class="admin_form">
-                    <div class="form-group row ">
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control zoom_input" id="inputEmail3"
-                                placeholder="Paste link">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-10 admin_btn_div">
-                            <button type="submit" class="btn btn-primary zoom_btn">Upload</button>
-                            <button type="submit" id="cancel_btn" class="btn btn-primary zoom_btn">Cancel</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            </div>
-            <!--update student ist  -->
-            <div id="class list" class="tabcontent">
-                <div class="dashboardHeader">
-                    <h3><img src="#" alt="Facilitator photo" /></h3>
-                    <h3>Online forum</h3>
-                </div>
-                
-            <div class="admin_user_form">
-                <h3>Paste class link</h3>
-                <form class="admin_form">
-                    <div class="form-group row ">
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control zoom_input" id="inputEmail3"
-                                placeholder="Paste link">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-10 admin_btn_div">
-                            <button type="submit" class="btn btn-primary zoom_btn">Upload</button>
-                            <button type="submit" id="cancel_btn" class="btn btn-primary zoom_btn">Cancel</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            </div>
         </div>
-
-        <!-- </main> -->
     </div>
 </body>
 <script src="dashboards.js"></script>

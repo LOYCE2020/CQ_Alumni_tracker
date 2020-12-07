@@ -34,13 +34,8 @@ body {font-family: "Helvetica", sans-serif;}
   border: 1px solid #ccc;
   width: 80%;
   border-left: none;
-  height: 600px;
+  height: 100vh;
 }
-/* .dashboardHeader img{
-    width: 120px;
-    height: 80px;
-    
-} */
 .dashboardHeader{
     display: flex;
     justify-content: space-between;
@@ -49,7 +44,7 @@ body {font-family: "Helvetica", sans-serif;}
 
 
 
-/* view list of students */
+/* view alumni list */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -90,7 +85,7 @@ table {
     font-size: 15px;
   }
   
-  button {
+  /* button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -101,6 +96,15 @@ table {
     cursor: pointer;
     width: 100%;
     font-size: 15px;
+  } */
+  .student_table_tittle_div{
+    padding: 3px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: inherit;
   }
   
   
@@ -197,7 +201,7 @@ hr {
   opacity: 1;
 }
 
-/* Add a blue text color to links */
+/* making the register button blue */
 a {
   color: dodgerblue;
 }
@@ -206,4 +210,38 @@ a {
 .signin {
   background-color: #f1f1f1;
   text-align: center;
+}
+
+/* student download */
+.linksDiv{
+  background-color: white;
+  border: 2px solid #616060c4;
+  color: black;
+  
+}
+.linksDiv> div{
+display: flex;
+justify-content: space-around;
+}
+.link_separator{
+
+  width: 90%;
+}
+
+
+/* Student online forum */
+.link{
+  color: dodgerblue;
+}
+.forum_description_div{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 9px;
+}
+
+/* student assessment table */
+.student_assessment_table th{
+border: 2px solid white;
+text-align: center;
 }
