@@ -83,7 +83,7 @@ table {
   .title {
     color: grey;
     font-size: 15px;
-  }
+  } */
 
   .student_table_tittle_div{
     padding: 3px;
@@ -100,7 +100,7 @@ table {
      color: white;
      padding-bottom: 15px;
 
- } */
+ }
 
  /* Admin dashboard */
 
@@ -118,6 +118,7 @@ border-radius: 5px;
      margin-left: 10px;
      background-color: orange;
      color: black;
+     padding: 8px;
  }
  .admin_user_form{
      background-color:#3f3f3f93;
