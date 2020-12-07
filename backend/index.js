@@ -3,12 +3,14 @@ const mongoose= require('mongoose');
 
 const cookieParser=require('cookie-parser');
 const db=require('./config/config').get(process.env.NODE_ENV);
+const cors=require('cors')
 const User=require('./models/user');
 const {auth} =require('./middlewares/auth');
 
 const app=express();
 // app use
 app.use(express.json());
+app.use(cors());
 app.use(cookieParser());
 
 // database connection
@@ -90,6 +92,19 @@ app.get('/code_queen/logout',auth,function(req,res){
     });
 
 }); 
+
+app.get('/code_queen/users', function(req, res) {
+    user.find({}, function(err, Users){
+      if (err)
+          return done(err);
+  
+      if (Users) {
+        return res.status(200).json({
+            Users
+        });
+      }
+    });
+  });
 
 // listening port
 const PORT=process.env.PORT||3000;
